@@ -24,7 +24,7 @@ function App() {
       const targetDate = new Date(now.getFullYear(), 2,4); // Month is 0-indexed, so 2 = March
       
       // If we're already past March 4th this year, set target to next year
-      if (now > targetDate && now.getMonth() > 2 || (now.getMonth() === 2 && now.getDate() > 15)) {
+      if (now > targetDate && now.getMonth() > 2 || (now.getMonth() === 2 && now.getDate() > 4)) {
         targetDate.setFullYear(now.getFullYear() + 1);
       }
       
