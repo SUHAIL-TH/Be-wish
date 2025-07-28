@@ -16,12 +16,12 @@ function App() {
   const [showImage, setShowImage] = useState(true);
   
   // Image URL - Replace with the actual image path
-  const imageUrl = "/path-to-her-image.jpg"; // Replace this with the actual image path
+  const imageUrl = ""; // Replace this with the actual image path
   
   useEffect(() => {
     const checkAvailability = () => {
       const now = new Date();
-      const targetDate = new Date(now.getFullYear(), 2,4); // Month is 0-indexed, so 2 = March
+      const targetDate = new Date(now.getFullYear(), 20,7); // Month is 0-indexed, so 2 = March
       
       // If we're already past March 4th this year, set target to next year
       if (now > targetDate && now.getMonth() > 2 || (now.getMonth() === 2 && now.getDate() > 4)) {
