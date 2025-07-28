@@ -47,12 +47,12 @@ function BirthDay() {
         { id: 1, title: "Moments", views: "2k", url: "http://www.instagram.com/reel/C_r844jyDWo/?igsh=MWY5cnJkaTR1cmVlaw==" },
         { id: 2, title: "Haton meh", views: "1 k", url: "https://www.instagram.com/reel/DFSepK3zC0D/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" },
         { id: 3, title: "Meh thera ", views: "3 k", url: "https://www.instagram.com/reel/DE9DJP2tMqf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-        { id: 4, title: "We fix ,we stay", views: "7 K", url: "https://www.instagram.com/reel/DBESmzQy1rl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+        { id: 4, title: "", views: "7 K", url: "https://www.instagram.com/reel/DBESmzQy1rl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
         // { id: 4, title: "We fight , fix and stay", views: "7 K", url: "https://www.instagram.com/reel/DCqrAM1SlGw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
         // { id: 5, title: "Hug", views: "5 K", url: "https://www.instagram.com/reel/DFFG47FNVfS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
         { id: 5, title: "4 Ever", views: "5.7K", url: "https://www.instagram.com/reel/DGi6OQqqVZj/?igsh=MWo3aGcwYXhjdHhtNA==" },
         { id: 6, title: "......", views: "5.7K", url: "https://www.instagram.com/reel/DEXrmFqv87m/?igsh=OTl0c2oybWJjenRz" },
-        { id: 7, title: "Still you", views: "5.7K", url: "https://www.instagram.com/reel/DF2eSX5SBKH/?igsh=MTN3ODMxaHdvcmEybw==" },
+        { id: 7, title: "", views: "5.7K", url: "https://www.instagram.com/reel/DF2eSX5SBKH/?igsh=MTN3ODMxaHdvcmEybw==" },
         { id: 8, title: "😊", views: "5.7K", url: "https://www.instagram.com/reel/DDUhbZPvUV5/?igsh=MTg1Z3F6ZXQ0YWt0eA==" },
         { id: 9, title: "😅", views: "5.7K", url: "https://www.instagram.com/reel/DErv4nLSFE2/?igsh=MXR2OXpkdHUweHJicQ==" },
         { id: 10, title: "🦋", views: "5.7K", url: "https://www.instagram.com/reel/DBOa2cIy6LQ/?igsh=MTY5bXh6anExM21lMg==" },
@@ -348,7 +348,7 @@ function BirthDay() {
                     <div className="text-center">
                         <div className="inline-block animate-birthday-reveal">
                             <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-green-500 to-indigo-500">
-                                Happy Birthday Aishu <span className='text-black'>❤️🫂</span>!
+                                Happy Birthday Shukku<span className='text-black'></span>!
                             </span>
                         </div>
                         <div className="mt-8 text-gray-400 font-bold">Click anywhere to continue 😉</div>
@@ -366,7 +366,7 @@ function BirthDay() {
                             {/* Title and navigation */}
                             <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                                 <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-pink-500 to-blue-500 mb-4 md:mb-0">
-                                    Aishus Day
+                                    Shukku
                                 </h1>
 
                                 <div className="flex space-x-2 bg-gray-800 p-1 rounded-xl">
@@ -443,21 +443,7 @@ function BirthDay() {
                                                     <div className="text-xl text-gray-300 mb-8 max-w-xl leading-relaxed">
                                                         Hi,
                                                         <br />
-                                                        Happy Birthday, my girl! May all your dreams come true. Wishing you all the best for a bright and beautiful future. I will always be
-                                                         by your side—no matter what happens, we fight, we fix, and we stay together forever.
-
-                                                        I love you so much, my girl. Nothing else matters when it comes to you. And also
-                                                        I miss u ....
-                                                        <br />
-                                                        i want to you know ,what ever it is , what ever it takes us, i want to be with you ,  every step every momemt what ever it is sad or Happy
-
-                                                        ! ❤️🎉
-                                                        <br />
-                                                        <br />
-                                                        And also dont make distances from me , Like i said what ever happens i want to be with you , you are always my first priority
-                                                        <br />
-                                                        <br />
-                                                        please check other tab in top like memories, foryou, and more ...
+                                                        Betryal and direspect
                                                     </div>
 
                                                     <div className="w-full max-w-xl">
@@ -467,7 +453,7 @@ function BirthDay() {
                                                                     <Gift className="w-6 h-6 text-pink-400" />
                                                                 </div>
                                                                 <div className="text-center text-gray-300 text-sm">
-                                                                    Wishing you best luck
+                                                                   Betryal
                                                                 </div>
                                                             </div>
 
@@ -476,7 +462,7 @@ function BirthDay() {
                                                                     <Star className="w-6 h-6 text-purple-400" />
                                                                 </div>
                                                                 <div className="text-center text-gray-300 text-sm">
-                                                                    May all your wishes come true 🤍
+                                                                    May all you end up 
                                                                 </div>
                                                             </div>
 
@@ -485,7 +471,7 @@ function BirthDay() {
                                                                     <Heart className="w-6 h-6 text-indigo-400" />
                                                                 </div>
                                                                 <div className="text-center text-gray-300 text-sm">
-                                                                    I luv you so much da 🫂❤️
+                                                                    Betryal
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -496,7 +482,7 @@ function BirthDay() {
                                                 <div className="md:self-center relative group shrink-0">
                                                     <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-pink-500/50 shadow-lg transition-all duration-300">
                                                         <img
-                                                            src={aishuss}
+                                                            src={suhus}
                                                             alt="Birthday Girl"
                                                             className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                                                             onError={(e) => {
@@ -593,7 +579,7 @@ function BirthDay() {
                                         </div>
 
                                         <div className="text-center text-gray-400">
-                                            Looking forward to creating many more memories together 🥰!
+                                         Betryal!
                                         </div>
                                     </div>
                                 )}
@@ -776,7 +762,7 @@ function BirthDay() {
 
                         {/* Footer */}
                         <div className="py-4 px-6 text-center text-gray-500 border-t border-gray-700/30">
-                            With <span className='text-black'>❤️</span> $ Warm Wish
+                            With <span className='text-black'>❤️</span> $ Betryal
                         </div>
                         <div className=' py-4 px-6   text-center border-t '><span className='text-gray-300' > By Suhail</span></div>
 
