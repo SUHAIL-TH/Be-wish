@@ -1,17 +1,17 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Music, Gift, Camera, Heart, ChevronLeft, ChevronRight, Play, Pause, Star, List } from 'lucide-react';
-import memory1 from '../assets/photos/memoryy.jpg';
-import memory2 from '../assets/photos/memory2.jpg';
-import memory3 from '../assets/photos/memory3.jpg';
-import memory4 from '../assets/photos/memory4.jpg';
-import aishuss from '../assets/photos/aishuss.jpg';
+// import memory1 from '../assets/photos/memoryy.jpg';
+// import memory2 from '../assets/photos/memory2.jpg';
+// import memory3 from '../assets/photos/memory3.jpg';
+// import memory4 from '../assets/photos/memory4.jpg';
+// import aishuss from '../assets/photos/aishuss.jpg';
 
-import song from '../assets/music/songs.mp3'
-import song1 from '../assets/music/song1.mp3'
-import song2 from '../assets/music/song2.mp3'
-import deewani from '../assets/music/dewani.mp3'
-import ekvillan from '../assets/music/ekvillan.mp3'
-import foryou from '../assets/music/foryou.mp3'
+// import song from '../assets/music/songs.mp3'
+// import song1 from '../assets/music/song1.mp3'
+// import song2 from '../assets/music/song2.mp3'
+// import deewani from '../assets/music/dewani.mp3'
+// import ekvillan from '../assets/music/ekvillan.mp3'
+// import foryou from '../assets/music/foryou.mp3'
 
 function BirthDay() {
     const [activeSection, setActiveSection] = useState('greeting');
@@ -27,20 +27,20 @@ function BirthDay() {
 
     // Sample memories
     const memories = [
-        { id: 1, url: memory1, caption: 'Our First Meet' },
-        { id: 2, url: memory2, caption: 'Our meet after a fight' },
-        { id: 3, url: memory4, caption: 'Our 2nd meetup' },
-        { id: 4, url: memory3, caption: 'Te extraño mucho ' }
+        { id: 1, url: "", caption: 'Our First Meet' },
+        { id: 2, url: "", caption: 'Our meet after a fight' },
+        { id: 3, url: "", caption: 'Our 2nd meetup' },
+        { id: 4, url: "", caption: 'Te extraño mucho ' }
     ];
 
     // Sample songs
     const songs = [
-        { id: 1, url: deewani, title: "Deewani 🤍", artist: "love", duration: "1:32" },
-        { id: 2, url: song, title: "Mersal (Your fav) ❤️", artist: "Love", duration: "4:35" },
-        { id: 3, url: song2, title: "nan unn 🫂 ", artist: "24", duration: "3:43" },
-        { id: 4, url: ekvillan, title: "Ek villan ", artist: "love", duration: "5:00" },
-        { id: 5, url: foryou, title: "Kalank 🥰 ", artist: "love", duration: "3:00" },
-        { id: 6, url: song1, title: "Tabaah Ho Gaye", artist: "Kool", duration: "4:32" },
+        { id: 1, url: "", title: "Deewani 🤍", artist: "love", duration: "1:32" },
+        { id: 2, url: "", title: "Mersal (Your fav) ❤️", artist: "Love", duration: "4:35" },
+        { id: 3, url: "", title: "nan unn 🫂 ", artist: "24", duration: "3:43" },
+        { id: 4, url: "", title: "Ek villan ", artist: "love", duration: "5:00" },
+        { id: 5, url: "", title: "Kalank 🥰 ", artist: "love", duration: "3:00" },
+        { id: 6, url: "", title: "Tabaah Ho Gaye", artist: "Kool", duration: "4:32" },
 
     ];
     const instagramReels = [
@@ -482,7 +482,7 @@ function BirthDay() {
                                                 <div className="md:self-center relative group shrink-0">
                                                     <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-pink-500/50 shadow-lg transition-all duration-300">
                                                         <img
-                                                            src={suhus}
+                                                            src={""}
                                                             alt="Birthday Girl"
                                                             className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                                                             onError={(e) => {
@@ -504,9 +504,87 @@ function BirthDay() {
                                         </div>
                                     </div>
                                 )}
+                                {/* Memories section */}
+{activeSection === 'memories' && (
+  <div className="animate-fade-in">
+    <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 mb-6">
+      Our Special Memories
+    </h2>
+
+    <p className="text-gray-300 text-center mb-10">
+      Scroll down to relive our journey ❤️
+    </p>
+
+    <div className="relative max-w-5xl mx-auto py-10">
+      {/* Vertical line */}
+      <div className="absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-pink-400 to-purple-500 -translate-x-1/2 hidden md:block"></div>
+
+      {memories.map((memory, index) => {
+        const isFirstLayout = index % 2 === 0; // IMPORTANT
+
+        return (
+          <div
+            key={index}
+            className="relative flex flex-col md:flex-row items-center mb-24"
+          >
+            {/* LEFT SIDE */}
+            <div className="w-full md:w-1/2 px-6 mb-6 md:mb-0">
+              {isFirstLayout ? (
+                /* IMAGE LEFT (1st, 3rd, 5th...) */
+                <div className="relative w-52 h-52 mx-auto rounded-2xl overflow-hidden shadow-xl group">
+                  <img
+                    src={memory.url}
+                    alt={`Memory ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+              ) : (
+                /* TEXT LEFT (2nd, 4th...) */
+                <div className="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg max-w-md mx-auto">
+                  <p className="text-gray-800 text-lg leading-relaxed font-medium">
+                    {memory.caption}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* CENTER DOT */}
+            <div className="absolute md:left-1/2 w-6 h-6 bg-pink-500 rounded-full shadow-lg z-10 md:-translate-x-1/2"></div>
+
+            {/* RIGHT SIDE */}
+            <div className="w-full md:w-1/2 px-6">
+              {isFirstLayout ? (
+                /* TEXT RIGHT */
+                <div className="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg max-w-md mx-auto">
+                  <p className="text-gray-800 text-lg leading-relaxed font-medium">
+                    {memory.caption}
+                  </p>
+                </div>
+              ) : (
+                /* IMAGE RIGHT */
+                <div className="relative w-52 h-52 mx-auto rounded-2xl overflow-hidden shadow-xl group">
+                  <img
+                    src={memory.url}
+                    alt={`Memory ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <div className="text-center text-gray-400 mt-10 italic">
+      Betrayal!
+    </div>
+  </div>
+)}
+
 
                                 {/* Memories section */}
-                                {activeSection === 'memories' && (
+                                {/* {activeSection === 'memories' && (
                                     <div className="animate-fade-in">
                                         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 mb-6">
                                             Our Special Memories
@@ -525,7 +603,7 @@ function BirthDay() {
                                         >
                                             <div className="absolute inset-0 bg-gray-900 opacity-30 group-hover:opacity-20 transition-opacity duration-300"></div>
 
-                                            {/* Loading indicator - shows only while image is loading */}
+                                          
                                             <div
                                                 className={`absolute inset-0 flex items-center justify-center bg-gray-800 transition-opacity duration-300 ${imageLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
                                             >
@@ -582,7 +660,7 @@ function BirthDay() {
                                          Betryal!
                                         </div>
                                     </div>
-                                )}
+                                )} */}
                                 {/* Music section */}
                                 {activeSection === 'music' && (
                                     <div ref={musicContainerRef} className="animate-fade-in">
